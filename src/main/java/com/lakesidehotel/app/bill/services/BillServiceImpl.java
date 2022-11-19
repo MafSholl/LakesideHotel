@@ -9,7 +9,6 @@ import com.lakesidehotel.app.bill.repository.BillRepository;
 import com.lakesidehotel.app.bill.services.mockServices.ItemMockService;
 import com.lakesidehotel.app.guest.models.Guest;
 import com.lakesidehotel.app.guest.repository.GuestRepository;
-import com.lakesidehotel.app.room.exception.LakeSideHotelException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,7 +34,7 @@ public class BillServiceImpl implements BillService{
         if (generateBillDto == null) throw new LakesideHotelException("Request does not contain guest id");
         List<ItemMock> itemList = itemMockService.findItemsByCustomerId(generateBillDto.getGuestId());
         Optional<Guest> optionalGuest = guestRepository.findById(generateBillDto.getGuestId());
-        if(optionalGuest.isEmpty()) throw new LakeSideHotelException("Guest does not exist");
+        if(optionalGuest.isEmpty()) throw new LakesideHotelException("Guest does not exist");
         Guest guest = optionalGuest.get();
         Bill newBill = Bill.builder()
                 .customerFirstName(guest.getFirstName())

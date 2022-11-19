@@ -4,7 +4,7 @@ import com.lakesidehotel.app.bill.controller.responses.ApiResponse;
 import com.lakesidehotel.app.bill.dto.BillDto;
 import com.lakesidehotel.app.bill.dto.GenerateBillDto;
 import com.lakesidehotel.app.bill.services.BillService;
-import com.lakesidehotel.app.room.exception.LakeSideHotelException;
+import com.lakesidehotel.app.exceptions.LakesideHotelException;
 import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,12 +19,12 @@ public class BillController {
     private BillService billService;
 
     @PostMapping("generate-bill/{id}")
-    public ResponseEntity<?> generateBill(@NonNull @PathVariable Long id) throws LakeSideHotelException {
+    public ResponseEntity<?> generateBill(@NonNull @PathVariable Long id) throws LakesideHotelException {
         GenerateBillDto guestId = new GenerateBillDto(id);
         BillDto bill = billService.generateBill(guestId);
         ApiResponse response = ApiResponse.builder()
                 .status("success")
-                .message("BVN created successfully")
+                .message("Bill created successfully")
                 .data(bill)
                 .statusCode(HttpStatus.OK.value())
                 .build();
