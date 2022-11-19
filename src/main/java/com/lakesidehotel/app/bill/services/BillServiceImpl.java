@@ -2,7 +2,7 @@ package com.lakesidehotel.app.bill.services;
 
 import com.lakesidehotel.app.bill.dto.BillDto;
 import com.lakesidehotel.app.bill.dto.GenerateBillDto;
-import com.lakesidehotel.app.exceptions.LakesideHotelException;
+import com.lakesidehotel.app.exceptions.exceptionClasses.LakesideHotelException;
 import com.lakesidehotel.app.bill.models.Bill;
 import com.lakesidehotel.app.bill.models.ItemMock;
 import com.lakesidehotel.app.bill.repository.BillRepository;

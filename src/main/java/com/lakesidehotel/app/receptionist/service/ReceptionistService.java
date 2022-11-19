@@ -5,8 +5,7 @@ import com.lakesidehotel.app.receptionist.dto.CheckRoomAvailabilityDto;
 import com.lakesidehotel.app.receptionist.dto.ReceptionistDto;
 import com.lakesidehotel.app.room.dto.BookRoomDto;
 import com.lakesidehotel.app.room.dto.BookRoomRequest;
-import com.lakesidehotel.app.exceptions.LakesideHotelException;
-import com.lakesidehotel.app.feedback.dto.FeedbackDto;
+import com.lakesidehotel.app.exceptions.exceptionClasses.LakesideHotelException;
 
 public interface ReceptionistService {
     ReceptionistDto createNewReceptionist(ReceptionistDto createReceptionistRequest);

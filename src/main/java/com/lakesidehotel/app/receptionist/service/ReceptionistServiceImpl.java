@@ -1,6 +1,6 @@
 package com.lakesidehotel.app.receptionist.service;
 
-import com.lakesidehotel.app.exceptions.LakesideHotelException;
+import com.lakesidehotel.app.exceptions.exceptionClasses.LakesideHotelException;
 import com.lakesidehotel.app.feedback.dto.FeedbackDto;
 import com.lakesidehotel.app.feedback.service.FeedbackService;
 import com.lakesidehotel.app.receptionist.dto.CheckRoomAvailabilityDto;

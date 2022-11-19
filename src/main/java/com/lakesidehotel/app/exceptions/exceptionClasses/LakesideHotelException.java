@@ -1,4 +1,4 @@
-package com.lakesidehotel.app.exceptions;
+package com.lakesidehotel.app.exceptions.exceptionClasses;
 
 public class LakesideHotelException extends RuntimeException {
     public LakesideHotelException(String message) {
