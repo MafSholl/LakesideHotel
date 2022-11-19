@@ -4,7 +4,7 @@ import com.lakesidehotel.app.bill.controller.responses.ApiResponse;
 import com.lakesidehotel.app.bill.dto.BillDto;
 import com.lakesidehotel.app.bill.dto.GenerateBillDto;
 import com.lakesidehotel.app.bill.services.BillService;
-import com.lakesidehotel.app.exceptions.LakesideHotelException;
+import com.lakesidehotel.app.exceptions.exceptionClasses.LakesideHotelException;
 import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
