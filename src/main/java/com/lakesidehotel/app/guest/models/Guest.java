@@ -1,6 +1,6 @@
 package com.lakesidehotel.app.guest.models;
 
-import com.example.lakesidehotel.app.user.User;
+import com.lakesidehotel.app.users.model.User;
 import lombok.*;
 
 import javax.persistence.Entity;
