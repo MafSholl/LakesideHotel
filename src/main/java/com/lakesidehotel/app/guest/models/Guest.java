@@ -10,7 +10,6 @@ import javax.persistence.Id;
 
 @Setter
 @Getter
-@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
