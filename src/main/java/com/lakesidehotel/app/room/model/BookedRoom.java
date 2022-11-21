@@ -1,6 +1,6 @@
 package com.lakesidehotel.app.room.model;
 
-import com.lakesidehotel.app.users.model.Guest;
+import com.lakesidehotel.app.guest.models.Guest;
 import lombok.*;
 import org.springframework.beans.factory.annotation.Value;
 

@@ -1,18 +1,17 @@
-package com.lakesidehotel.app.receptionist.models;
+package com.lakesidehotel.app.manager.model;
 
 import com.lakesidehotel.app.users.model.User;
 import com.lakesidehotel.app.users.model.UserType;
 import lombok.*;
 
 import javax.persistence.*;
-
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Entity
-public class Receptionist extends User {
+@Builder
+public class Manager extends User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -1,6 +1,6 @@
 package com.lakesidehotel.app.bill.dto;
 
-import com.example.lakesidehotel.app.bill.models.ItemMock;
+import com.lakesidehotel.app.bill.models.ItemMock;
 import lombok.Data;
 
 import java.math.BigDecimal;
